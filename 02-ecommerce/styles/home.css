@@ -1,0 +1,97 @@
+body {
+    min-height: 100vh;
+    background: url('./assets/home-bg.png') center no-repeat;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.home-section {
+    width: 100%;
+    max-width: 85%;
+}
+
+.home-section article {
+    display: flex;
+    color: #fff;
+    margin: auto;
+    max-width: 70%;
+}
+
+.home-section article h2 {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+.home-section article>img {
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+}
+
+.info {
+    margin-top: 70px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info p {
+    margin-top: 20px;
+}
+
+.btn-outlined {
+    margin-top: 30px;
+    width: 220px;
+    height: 50px;
+    border-radius: 180px;
+    position: relative;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    cursor: pointer;
+    line-height: 12px;
+}
+
+.btn-outlined:before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    left: 10%;
+    transition: 0.3s opacity ease-in-out;
+    filter: blur(15px);
+    opacity: 0;
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+.btn-outlined:hover:before {
+    opacity: 1;
+    transition: 0.3s opacity ease-in-out;
+    filter: blur(25px);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+}
+
+.btn-outlined:after {
+    content: 'Empezar a Comprar';
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: rgba(235, 235, 235, 1);
+    font-weight: bold;
+    z-index: 5;
+    position: absolute;
+    display: block;
+    border-radius: 180px;
+    width: 92%;
+    height: 80%;
+    top: 10%;
+    left: 4%;
+    background-color: rgb(19, 20, 22);
+}

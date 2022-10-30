@@ -14,16 +14,21 @@ body {
 
 .header {
     background: #ffff00;
-    padding: 5px 15px;
+    box-shadow: 0 2px 2px 0 rgba(255, 255, 255, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80px;
+    flex-direction: column;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
 }
 
 .container {
     width: 100%;
     max-width: 70%;
+    padding: 5px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,10 +68,21 @@ body {
 .nav-items a {
     text-decoration: none;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .carrito {
     background: none;
     border: none;
+}
+
+.bargain {
+    background: #ecec51;
+    width: 100vw;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.bargain b {
+    color: red;
 }
