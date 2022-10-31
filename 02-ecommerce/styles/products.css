@@ -58,3 +58,14 @@ main h2 {
 .description-product p {
     color: #454545;
 }
+
+.product-card span{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: red !important;
+}
