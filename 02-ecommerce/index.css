@@ -78,8 +78,8 @@ body {
 
 .bargain {
     background: #ecec51;
-    width: 100vw;
     text-align: center;
+    width: 100%;
     padding: 10px 0;
 }
 

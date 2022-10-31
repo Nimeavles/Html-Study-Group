@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    background: url('./assets/home-bg.png') center no-repeat;
+    background: url('../assets/home-bg.png') center no-repeat;
 }
 
 main {
